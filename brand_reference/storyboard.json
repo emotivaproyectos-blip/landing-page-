@@ -1,0 +1,879 @@
+{
+  "name": "RiverTech · Previsualización de montaje",
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "transition_seconds": 0.5,
+  "duration_seconds": 178.5,
+  "audio": null,
+  "avatar_status": "not_generated_plan_requires_basic",
+  "source_manifest": {
+    "navigation": {
+      "file": "assets/Captura de pantalla 2026-09-15 104718.png",
+      "sha256": "07ae1195b38fa96c708726843ec5d2e1ec871ca60cb6256130e1e49106e2fc4d"
+    },
+    "efficiency": {
+      "file": "assets/Captura de pantalla 2026-09-15 104839.png",
+      "sha256": "cb60924b7d6dc6f2d5b0bc0fae66b1a088c3d5ad11ac2530e7ff89fef9445832"
+    },
+    "safety": {
+      "file": "assets/Captura de pantalla 2026-09-15 104950.png",
+      "sha256": "4d2ba5d8c5341e62f038ef5b05abc7b8dcaf144efac98557f4c9557415534f34"
+    },
+    "maintenance": {
+      "file": "assets/Captura de pantalla 2026-09-15 105207.png",
+      "sha256": "5a2b3dc6f095a0067779cccf0e7b7d0671a6765e0973288cc58baaac2e3dad4f"
+    },
+    "dibulla": {
+      "file": "assets/Captura de pantalla 2026-09-15 095508.png",
+      "sha256": "cbd9a978c6bb0cef0949f4fa801f9dd9b69e0f16f76e44c151457e926968cc64"
+    },
+    "gloria_base": {
+      "file": "assets/Captura de pantalla 2026-09-15 105813.png",
+      "sha256": "b9637f9c71a7543d67af8493648f952329600c1df1babcc61bfeb40831e7a4cd"
+    },
+    "gloria_chart": {
+      "file": "assets/Captura de pantalla 2026-09-15 105659.png",
+      "sha256": "cc66eea99cdaa0752a2213b63557879700d2907caf2942a161bcdf17a6e4cda8"
+    },
+    "history_start": {
+      "file": "assets/Captura de pantalla 2026-09-15 111213.png",
+      "sha256": "af38fff02ca134896948831f2626f2ec7aad12bb709a2be1c21c4103e12ee3ba"
+    },
+    "history_chart": {
+      "file": "assets/Captura de pantalla 2026-09-15 113649.png",
+      "sha256": "cd447b14f569bb0b85da8ccc410e92c85f9e4d8476c55a837f7e64402ce6d53a"
+    },
+    "history_progress": {
+      "file": "assets/Captura de pantalla 2026-09-15 113549.png",
+      "sha256": "9d78ca2b0e27f380e1edb09d878b71294a4c2199ce8c4c77dfb936138231a897"
+    },
+    "boat": {
+      "file": "assets/proy_f209544c797fe645b7d076aa29bbaa009eac1321.png",
+      "sha256": "fdd506b8a774351590d176784ceb603c0d86561cf44076163592a365cca4ac67"
+    }
+  },
+  "scenes": [
+    {
+      "asset": "boat",
+      "chapter": "APERTURA",
+      "title": "Operación fluvial",
+      "duration": 12,
+      "captions": [
+        [
+          0,
+          "¿Quieres reducir los costos de tu operación fluvial?"
+        ],
+        [
+          5.5,
+          "Te presento RiverTech. Información para conocer tu operación."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          10,
+          1.025,
+          0.5,
+          0.5
+        ],
+        [
+          12,
+          1.025,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "¿Quieres reducir los costos de tu operación fluvial? Te presento RiverTech: una plataforma para conocer tu flota, seguir tus embarcaciones y analizar cada recorrido.",
+      "kind": "photo",
+      "index": 0,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "asset": "navigation",
+      "chapter": "DASHBOARD",
+      "title": "Navigation",
+      "duration": 18,
+      "captions": [
+        [
+          0,
+          "Una visión general del estado de tu flota."
+        ],
+        [
+          6,
+          "Consulta los indicadores de movimiento y utilización."
+        ],
+        [
+          12,
+          "Revisa la ubicación, el último reporte y las distancias."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2.3,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          6.5,
+          1.5,
+          0.585,
+          0.334
+        ],
+        [
+          9.2,
+          1.5,
+          0.585,
+          0.334
+        ],
+        [
+          13,
+          1.4,
+          0.625,
+          0.635
+        ],
+        [
+          16,
+          1.4,
+          0.625,
+          0.635
+        ],
+        [
+          18,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "Todo comienza con una visión general de tu flota. En Navigation, consulta los estados reportados y los indicadores de movimiento y utilización. Después, revisa la ubicación, el último reporte y las distancias de cada embarcación.",
+      "kind": "screen",
+      "index": 1,
+      "start": 11.5,
+      "end": 29.5
+    },
+    {
+      "asset": "efficiency",
+      "chapter": "DASHBOARD",
+      "title": "Efficiency",
+      "duration": 18,
+      "captions": [
+        [
+          0,
+          "Consulta los indicadores de utilización, distancia y tiempo detenido."
+        ],
+        [
+          6,
+          "Compara las gráficas por embarcación."
+        ],
+        [
+          12,
+          "Explora el detalle de eficiencia de cada registro."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5.8,
+          1.3,
+          0.605,
+          0.385
+        ],
+        [
+          8,
+          1.3,
+          0.605,
+          0.385
+        ],
+        [
+          12,
+          1.4,
+          0.62,
+          0.575
+        ],
+        [
+          15,
+          1.4,
+          0.62,
+          0.575
+        ],
+        [
+          18,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "En Efficiency, consulta los indicadores de utilización, distancia y tiempo detenido. Las gráficas permiten comparar embarcaciones. El detalle reúne los valores de utilización, productividad y consistencia de velocidad que muestra cada registro.",
+      "kind": "screen",
+      "index": 2,
+      "start": 29.0,
+      "end": 47.0
+    },
+    {
+      "asset": "safety",
+      "chapter": "DASHBOARD",
+      "title": "Safety",
+      "duration": 16,
+      "captions": [
+        [
+          0,
+          "Revisa las alarmas AIS y los eventos registrados."
+        ],
+        [
+          5.5,
+          "Observa su distribución durante el período seleccionado."
+        ],
+        [
+          10.5,
+          "Consulta las excepciones y la cobertura del seguimiento."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5.5,
+          1.4,
+          0.62,
+          0.38
+        ],
+        [
+          8.5,
+          1.4,
+          0.62,
+          0.38
+        ],
+        [
+          12,
+          1.45,
+          0.62,
+          0.65
+        ],
+        [
+          14,
+          1.45,
+          0.62,
+          0.65
+        ],
+        [
+          16,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "En Safety, revisa las alarmas AIS y los eventos registrados. Observa su distribución durante el período seleccionado y consulta el registro de excepciones, junto con la información de cobertura del seguimiento.",
+      "kind": "screen",
+      "index": 3,
+      "start": 46.5,
+      "end": 62.5
+    },
+    {
+      "asset": "maintenance",
+      "chapter": "DASHBOARD",
+      "title": "Pilot Maintenance",
+      "duration": 16,
+      "captions": [
+        [
+          0,
+          "Disponibilidad y estado de los componentes de Pilot."
+        ],
+        [
+          5.5,
+          "Consulta POS, HDG, AIS y DPT."
+        ],
+        [
+          10.5,
+          "Compara disponibilidad y cobertura de datos por embarcación."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5.5,
+          1.4,
+          0.62,
+          0.36
+        ],
+        [
+          8.5,
+          1.4,
+          0.62,
+          0.36
+        ],
+        [
+          12,
+          1.35,
+          0.62,
+          0.62
+        ],
+        [
+          14,
+          1.35,
+          0.62,
+          0.62
+        ],
+        [
+          16,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "Pilot Maintenance muestra indicadores de disponibilidad y fallos, junto con el estado de los componentes de Pilot. Consulta posición, rumbo, AIS y profundidad, y compara la disponibilidad y la cobertura de datos por embarcación.",
+      "kind": "screen",
+      "index": 4,
+      "start": 62.0,
+      "end": 78.0
+    },
+    {
+      "asset": "dibulla",
+      "chapter": "REALTIME",
+      "title": "Seguimiento de embarcaciones",
+      "duration": 10,
+      "captions": [
+        [
+          0,
+          "Ubicación reportada y contexto del recorrido."
+        ],
+        [
+          4.8,
+          "La lista lateral reúne velocidad y estado del reporte."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.8,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          4.6,
+          1.6,
+          0.36,
+          0.34
+        ],
+        [
+          6.5,
+          1.6,
+          0.36,
+          0.34
+        ],
+        [
+          9,
+          1.25,
+          0.475,
+          0.54
+        ],
+        [
+          10,
+          1.25,
+          0.475,
+          0.54
+        ]
+      ],
+      "narration": "En Realtime, consulta la ubicación reportada y el recorrido visible. La lista lateral reúne la velocidad y el estado del reporte de tus embarcaciones.",
+      "kind": "screen",
+      "index": 5,
+      "start": 77.5,
+      "end": 87.5
+    },
+    {
+      "asset": "gloria_base",
+      "chapter": "REALTIME",
+      "title": "LA GLORIA · Mapa base",
+      "duration": 10,
+      "captions": [
+        [
+          0,
+          "Consulta la embarcación seleccionada sobre el mapa."
+        ],
+        [
+          4.8,
+          "Acércate al catálogo de cartas disponibles."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5.2,
+          1.3,
+          0.58,
+          0.56
+        ],
+        [
+          6.8,
+          1.3,
+          0.58,
+          0.56
+        ],
+        [
+          9.8,
+          1.65,
+          0.694,
+          0.31
+        ]
+      ],
+      "narration": "Observa la embarcación seleccionada sobre el mapa. El catálogo de cartas permite consultar las referencias cartográficas disponibles en la plataforma.",
+      "kind": "screen",
+      "index": 6,
+      "start": 87.0,
+      "end": 97.0
+    },
+    {
+      "asset": "gloria_chart",
+      "chapter": "REALTIME",
+      "title": "LA GLORIA · Carta superpuesta",
+      "duration": 10,
+      "captions": [
+        [
+          0,
+          "La carta complementa el contexto cartográfico."
+        ],
+        [
+          4.8,
+          "Colores, anotaciones y trazados de la captura original."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          2,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5.5,
+          1.4,
+          0.56,
+          0.565
+        ],
+        [
+          7.7,
+          1.4,
+          0.56,
+          0.565
+        ],
+        [
+          10,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "La vista con la carta superpuesta complementa el contexto cartográfico de la operación. Aquí se conserva el contenido de la captura original.",
+      "kind": "screen",
+      "index": 7,
+      "start": 96.5,
+      "end": 106.5
+    },
+    {
+      "asset": "dibulla",
+      "chapter": "PILOT",
+      "title": "DIBULLA PILOT · Navegación",
+      "duration": 14,
+      "captions": [
+        [
+          0,
+          "Información de navegación de la embarcación seleccionada."
+        ],
+        [
+          4.5,
+          "Rumbo, velocidad de giro y configuración del convoy."
+        ],
+        [
+          9.5,
+          "Lecturas disponibles de velocidad y profundidad."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.5,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          5,
+          2.15,
+          0.767,
+          0.278
+        ],
+        [
+          7,
+          2.15,
+          0.767,
+          0.278
+        ],
+        [
+          10.5,
+          2.15,
+          0.767,
+          0.584
+        ],
+        [
+          14,
+          2.15,
+          0.767,
+          0.584
+        ]
+      ],
+      "narration": "Pilot reúne información de la embarcación seleccionada. Consulta el rumbo, la velocidad de giro y la configuración del convoy. Revisa también las lecturas disponibles de velocidad y profundidad.",
+      "kind": "screen",
+      "index": 8,
+      "start": 106.0,
+      "end": 120.0
+    },
+    {
+      "asset": "gloria_base",
+      "chapter": "PILOT",
+      "title": "LA GLORIA · Información complementaria",
+      "duration": 11,
+      "captions": [
+        [
+          0,
+          "Velocidad e información de las estaciones de IDEAM."
+        ],
+        [
+          5.3,
+          "Consulta también las dimensiones de la embarcación."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.5,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          4.5,
+          2.15,
+          0.767,
+          0.5
+        ],
+        [
+          6.5,
+          2.15,
+          0.767,
+          0.5
+        ],
+        [
+          9.5,
+          2.15,
+          0.767,
+          0.725
+        ],
+        [
+          11,
+          2.15,
+          0.767,
+          0.725
+        ]
+      ],
+      "narration": "El panel también muestra información de las estaciones de IDEAM y las dimensiones de la embarcación. Cada lectura conserva la fecha, las unidades y el contexto de su registro.",
+      "kind": "screen",
+      "index": 9,
+      "start": 119.5,
+      "end": 130.5
+    },
+    {
+      "asset": "history_start",
+      "chapter": "HISTORY",
+      "title": "DIBULLA PILOT · 04:38:02",
+      "duration": 12,
+      "captions": [
+        [
+          0,
+          "Selecciona una embarcación y un rango de fechas."
+        ],
+        [
+          5.8,
+          "La línea de tiempo permite revisar momentos del recorrido."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.8,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          4.8,
+          1.6,
+          0.324,
+          0.325
+        ],
+        [
+          6.5,
+          1.6,
+          0.324,
+          0.325
+        ],
+        [
+          10,
+          1.3,
+          0.61,
+          0.615
+        ],
+        [
+          12,
+          1.3,
+          0.61,
+          0.615
+        ]
+      ],
+      "narration": "Con History, vuelve sobre una operación registrada. Selecciona la embarcación y el período de consulta. La línea de tiempo permite revisar distintos momentos del recorrido.",
+      "kind": "screen",
+      "index": 10,
+      "start": 130.0,
+      "end": 142.0
+    },
+    {
+      "asset": "history_chart",
+      "chapter": "HISTORY",
+      "title": "DIBULLA PILOT · 05:24:05",
+      "duration": 10,
+      "captions": [
+        [
+          0,
+          "Consulta el recorrido junto con la carta superpuesta."
+        ],
+        [
+          4.8,
+          "El catálogo conserva la fecha de cada referencia cartográfica."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.8,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          4.8,
+          1.25,
+          0.515,
+          0.53
+        ],
+        [
+          6.5,
+          1.25,
+          0.515,
+          0.53
+        ],
+        [
+          9.5,
+          1.65,
+          0.696,
+          0.321
+        ]
+      ],
+      "narration": "También puedes consultar la carta superpuesta al recorrido. El catálogo conserva las fechas de las referencias cartográficas que aparecen en esta vista.",
+      "kind": "screen",
+      "index": 11,
+      "start": 141.5,
+      "end": 151.5
+    },
+    {
+      "asset": "history_progress",
+      "chapter": "HISTORY",
+      "title": "DIBULLA PILOT · 05:35:11",
+      "duration": 12,
+      "captions": [
+        [
+          0,
+          "Revisa la ubicación y los datos del momento seleccionado."
+        ],
+        [
+          5.8,
+          "Convoy, velocidad y profundidad dentro del mismo registro."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          1.8,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          4.7,
+          1.35,
+          0.56,
+          0.53
+        ],
+        [
+          6.2,
+          1.35,
+          0.56,
+          0.53
+        ],
+        [
+          9.6,
+          2.05,
+          0.756,
+          0.465
+        ],
+        [
+          12,
+          2.05,
+          0.756,
+          0.465
+        ]
+      ],
+      "narration": "En el momento seleccionado, revisa la ubicación del convoy y los datos asociados. El panel conserva las lecturas de velocidad y profundidad, junto con la configuración de barcazas.",
+      "kind": "screen",
+      "index": 12,
+      "start": 151.0,
+      "end": 163.0
+    },
+    {
+      "asset": "boat",
+      "chapter": "CIERRE",
+      "title": "Registro de operación",
+      "duration": 16,
+      "captions": [
+        [
+          0,
+          "DIBULLA PILOT · Registro del 15 de septiembre de 2026, 05:35:11."
+        ],
+        [
+          5.4,
+          "Ocho barcazas · 4,3 km/h · Lectura de profundidad: 2,5 m."
+        ],
+        [
+          11.3,
+          "RiverTech. Conoce tu operación y decide con información."
+        ]
+      ],
+      "keyframes": [
+        [
+          0,
+          1,
+          0.5,
+          0.5
+        ],
+        [
+          16,
+          1,
+          0.5,
+          0.5
+        ]
+      ],
+      "narration": "Observa este registro de Dibulla Pilot: ocho barcazas, una velocidad de cuatro coma tres kilómetros por hora y una lectura de profundidad de dos coma cinco metros. RiverTech. Conoce tu operación y decide con información.",
+      "kind": "closing",
+      "index": 13,
+      "start": 162.5,
+      "end": 178.5
+    }
+  ]
+}

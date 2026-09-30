@@ -1,0 +1,45 @@
+RIVERTECH — GUION DE LOCUCIÓN
+Voz femenina, español latino neutro. Tono profesional y pausado.
+Guion pendiente de grabación. La previsualización no contiene voz ni música.
+
+000.00–012.00 s | APERTURA — Operación fluvial
+¿Quieres reducir los costos de tu operación fluvial? Te presento RiverTech: una plataforma para conocer tu flota, seguir tus embarcaciones y analizar cada recorrido.
+
+011.50–029.50 s | DASHBOARD — Navigation
+Todo comienza con una visión general de tu flota. En Navigation, consulta los estados reportados y los indicadores de movimiento y utilización. Después, revisa la ubicación, el último reporte y las distancias de cada embarcación.
+
+029.00–047.00 s | DASHBOARD — Efficiency
+En Efficiency, consulta los indicadores de utilización, distancia y tiempo detenido. Las gráficas permiten comparar embarcaciones. El detalle reúne los valores de utilización, productividad y consistencia de velocidad que muestra cada registro.
+
+046.50–062.50 s | DASHBOARD — Safety
+En Safety, revisa las alarmas AIS y los eventos registrados. Observa su distribución durante el período seleccionado y consulta el registro de excepciones, junto con la información de cobertura del seguimiento.
+
+062.00–078.00 s | DASHBOARD — Pilot Maintenance
+Pilot Maintenance muestra indicadores de disponibilidad y fallos, junto con el estado de los componentes de Pilot. Consulta posición, rumbo, AIS y profundidad, y compara la disponibilidad y la cobertura de datos por embarcación.
+
+077.50–087.50 s | REALTIME — Seguimiento de embarcaciones
+En Realtime, consulta la ubicación reportada y el recorrido visible. La lista lateral reúne la velocidad y el estado del reporte de tus embarcaciones.
+
+087.00–097.00 s | REALTIME — LA GLORIA · Mapa base
+Observa la embarcación seleccionada sobre el mapa. El catálogo de cartas permite consultar las referencias cartográficas disponibles en la plataforma.
+
+096.50–106.50 s | REALTIME — LA GLORIA · Carta superpuesta
+La vista con la carta superpuesta complementa el contexto cartográfico de la operación. Aquí se conserva el contenido de la captura original.
+
+106.00–120.00 s | PILOT — DIBULLA PILOT · Navegación
+Pilot reúne información de la embarcación seleccionada. Consulta el rumbo, la velocidad de giro y la configuración del convoy. Revisa también las lecturas disponibles de velocidad y profundidad.
+
+119.50–130.50 s | PILOT — LA GLORIA · Información complementaria
+El panel también muestra información de las estaciones de IDEAM y las dimensiones de la embarcación. Cada lectura conserva la fecha, las unidades y el contexto de su registro.
+
+130.00–142.00 s | HISTORY — DIBULLA PILOT · 04:38:02
+Con History, vuelve sobre una operación registrada. Selecciona la embarcación y el período de consulta. La línea de tiempo permite revisar distintos momentos del recorrido.
+
+141.50–151.50 s | HISTORY — DIBULLA PILOT · 05:24:05
+También puedes consultar la carta superpuesta al recorrido. El catálogo conserva las fechas de las referencias cartográficas que aparecen en esta vista.
+
+151.00–163.00 s | HISTORY — DIBULLA PILOT · 05:35:11
+En el momento seleccionado, revisa la ubicación del convoy y los datos asociados. El panel conserva las lecturas de velocidad y profundidad, junto con la configuración de barcazas.
+
+162.50–178.50 s | CIERRE — Registro de operación
+Observa este registro de Dibulla Pilot: ocho barcazas, una velocidad de cuatro coma tres kilómetros por hora y una lectura de profundidad de dos coma cinco metros. RiverTech. Conoce tu operación y decide con información.

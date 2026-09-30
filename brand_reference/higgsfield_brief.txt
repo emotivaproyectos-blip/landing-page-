@@ -1,0 +1,31 @@
+RIVERTECH — BRIEF PARA GENERACIÓN DEL AVATAR
+
+ESTADO
+La generación de la presentadora no llegó a iniciarse. Higgsfield rechazó la solicitud con «Requires basic plan or higher». No existe un job_id del avatar.
+
+REFERENCIA DE EMBARCACIÓN
+proy_f209544c797fe645b7d076aa29bbaa009eac1321.png
+Usar como referencia de tipo de embarcación y ambiente, no para atribuirle un nombre. Remolcador/empujador fluvial con superestructura blanca, casco azul y convoy de barcazas industriales. Río de agua marrón, riberas verdes, luz diurna suave. No es un yate ni una embarcación oceánica.
+
+PRESENTADORA
+Mujer adulta completamente ficticia, aproximadamente 35 años, apariencia latinoamericana, cabello castaño oscuro recogido, ojos marrones, maquillaje discreto y textura de piel natural. Camisa de trabajo azul marino lisa, sin insignias, marcas ni rangos. Expresión profesional y cercana. Encuadre de cintura hacia arriba en el tercio izquierdo, mirando a cámara. Manos naturales y gestos contenidos.
+
+ESCENARIO
+Interior seguro del puente de mando de una embarcación similar a la foto. Ventanas con río, convoy y ribera al fondo. Mantener la mitad derecha libre para componer posteriormente un panel original de RiverTech. No generar pantallas, cartografía, gráficas, logotipos, cifras ni textos legibles de la plataforma.
+
+CÁMARA Y MOVIMIENTO
+Formato horizontal 16:9. Cámara a altura de ojos, perspectiva natural y movimiento de acercamiento muy suave. Sin giros, zooms bruscos, transiciones llamativas ni distorsiones. Mantener la identidad, vestuario y escenario entre apertura y cierre.
+
+LOCUCIÓN DE APERTURA
+«¿Quieres reducir los costos de tu operación fluvial? Te presento RiverTech: una plataforma para conocer tu flota, seguir tus embarcaciones y analizar cada recorrido».
+
+LOCUCIÓN DE CIERRE
+«Observa este registro de Dibulla Pilot: ocho barcazas, una velocidad de cuatro coma tres kilómetros por hora y una lectura de profundidad de dos coma cinco metros. RiverTech. Conoce tu operación y decide con información».
+
+VOZ
+Voz femenina en español latino neutro, profesional, pausada y cálida. Mantener la misma voz durante las escenas a cámara y los módulos. Elegir la voz disponible mediante el selector de Higgsfield antes de generar la locución; no se ha seleccionado todavía un voice_id.
+
+EDICIÓN
+La presentadora y el ambiente pueden ser generados. Las capturas de RiverTech NO se regeneran. Insertarlas como medios originales en edición. En el cierre, usar el panel de Captura de pantalla 2026-09-15 113549.png, con fecha 15 septiembre 2026, 05:35:11. No animar los valores ni el convoy representado. El registro no es una transmisión en vivo. No identificar la embarcación de la fotografía como DIBULLA PILOT.
+
+La música instrumental discreta queda pendiente. No utilizar un modelo de voz para intentar generar música.
