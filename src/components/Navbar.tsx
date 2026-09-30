@@ -73,10 +73,10 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '28px',
+              gap: '24px',
             }}
             aria-label="Navegación principal"
-            className="hidden md:flex"
+            className="navbar-links"
           >
             <a
               href="#experiencia"
@@ -183,9 +183,153 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             </a>
           </nav>
 
+          {/* Right Action Area: Ocean Blue Rivertech Login Button & Mobile Toggle */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <a
+              href="https://rivertech.emotiva.co/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rivertech-login-btn"
+              title="Acceder a Rivertech Login"
+              aria-label="Acceder a Rivertech Login"
+            >
+              <span className="rivertech-login-pulse" aria-hidden="true" />
+              <span>Rivertech Login</span>
+              <svg
+                className="rivertech-login-icon"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                <polyline points="10 17 15 12 10 7" />
+                <line x1="15" y1="12" x2="3" y2="12" />
+              </svg>
+            </a>
 
+            {/* Mobile Hamburger Button */}
+            <button
+              type="button"
+              className="navbar-mobile-toggle"
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
+              aria-label={mobileMenuOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
+              aria-expanded={mobileMenuOpen}
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0f172a"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                {mobileMenuOpen ? (
+                  <>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </>
+                ) : (
+                  <>
+                    <line x1="4" y1="7" x2="20" y2="7" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="17" x2="20" y2="17" />
+                  </>
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
+
+      {/* Mobile Drawer Menu */}
+      {mobileMenuOpen && (
+        <div
+          style={{
+            position: 'fixed',
+            top: scrolled ? '61px' : '77px',
+            left: 0,
+            right: 0,
+            backgroundColor: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            borderBottom: '1px solid rgba(15, 23, 42, 0.1)',
+            boxShadow: '0 20px 40px rgba(15, 23, 42, 0.12)',
+            padding: '24px 20px',
+            zIndex: 49,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '14px',
+          }}
+        >
+          {[
+            { href: '#experiencia', label: 'HOME' },
+            { href: '#one-platform', label: 'ABOUT US' },
+            { href: '#solutions', label: 'SOLUTIONS' },
+            { href: '#climate', label: 'IMPACT' },
+            { href: '#endorsement', label: 'CLIENTS' },
+            { href: '#news', label: 'BLOG' },
+            { href: '#contacto', label: 'CONTACT US' },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => setMobileMenuOpen(false)}
+              style={{
+                fontSize: '0.9rem',
+                color: '#0f172a',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.04em',
+                padding: '8px 0',
+                borderBottom: '1px solid rgba(15, 23, 42, 0.05)',
+                textDecoration: 'none',
+              }}
+            >
+              {item.label}
+            </a>
+          ))}
+          <a
+            href="https://rivertech.emotiva.co/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="rivertech-login-btn"
+            style={{
+              marginTop: '10px',
+              width: '100%',
+              justifyContent: 'center',
+              padding: '12px 20px',
+            }}
+          >
+            <span className="rivertech-login-pulse" aria-hidden="true" />
+            <span>Rivertech Login</span>
+            <svg
+              className="rivertech-login-icon"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+              <polyline points="10 17 15 12 10 7" />
+              <line x1="15" y1="12" x2="3" y2="12" />
+            </svg>
+          </a>
+        </div>
+      )}
     </>
   );
 }
