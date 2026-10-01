@@ -16,10 +16,15 @@ export default function Footer({ isReducedMotion, onToggleReducedMotion }: Foote
   return (
     <footer
       style={{
-        backgroundColor: '#ffffff',
+        position: 'relative',
+        zIndex: 2,
+        background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.94) 100%)',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
         color: '#0f172a',
         padding: '80px 24px 40px 24px',
-        borderTop: '1px solid #e2e8f0',
+        borderTop: '1px solid rgba(255, 255, 255, 0.85)',
+        boxShadow: '0 -10px 40px rgba(15, 23, 42, 0.04)',
       }}
     >
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>

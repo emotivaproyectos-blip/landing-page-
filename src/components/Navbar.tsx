@@ -5,9 +5,10 @@ import Link from 'next/link';
 
 interface NavbarProps {
   onSkipExperience?: () => void;
+  currentChapterId?: string;
 }
 
-export default function Navbar({ onSkipExperience }: NavbarProps) {
+export default function Navbar({ onSkipExperience, currentChapterId = 'experiencia' }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -19,9 +20,19 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: '#experiencia', id: 'experiencia', label: 'HOME' },
+    { href: '#one-platform', id: 'one-platform', label: 'ABOUT US' },
+    { href: '#solutions', id: 'solutions', label: 'SOLUTIONS' },
+    { href: '#climate', id: 'climate', label: 'IMPACT' },
+    { href: '#endorsement', id: 'endorsement', label: 'CLIENTS' },
+    { href: '#news', id: 'news', label: 'BLOG' },
+    { href: '#contacto', id: 'contacto', label: 'CONTACT US' },
+  ];
+
   return (
     <>
-      <a href="#plataforma" className="skip-to-content">
+      <a href="#one-platform" className="skip-to-content">
         Saltar experiencia al contenido principal
       </a>
 
@@ -57,7 +68,6 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             style={{ display: 'flex', alignItems: 'center', gap: '14px', textDecoration: 'none' }}
             aria-label="Emotiva Inicio"
           >
-            {/* Emotiva Logo Typography */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ fontSize: '1.45rem', fontWeight: 800, color: '#0284c7', letterSpacing: '-0.03em' }}>
                 !
@@ -68,7 +78,7 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links with Active Chapter Highlighting */}
           <nav
             style={{
               display: 'flex',
@@ -78,109 +88,46 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             aria-label="Navegación principal"
             className="navbar-links"
           >
-            <a
-              href="#experiencia"
-              style={{
-                fontSize: '0.85rem',
-                color: '#0f172a',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-            >
-              HOME
-            </a>
-            <a
-              href="#one-platform"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              ABOUT US
-            </a>
-            <a
-              href="#solutions"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              SOLUTIONS
-            </a>
-            <a
-              href="#climate"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              IMPACT
-            </a>
-            <a
-              href="#endorsement"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              CLIENTS
-            </a>
-            <a
-              href="#news"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              BLOG
-            </a>
-            <a
-              href="#contacto"
-              style={{
-                fontSize: '0.85rem',
-                color: '#475569',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#0284c7')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#475569')}
-            >
-              CONTACT US
-            </a>
+            {navLinks.map((link) => {
+              const isActive = link.id === currentChapterId;
+              return (
+                <a
+                  key={link.id}
+                  href={link.href}
+                  style={{
+                    fontSize: '0.84rem',
+                    color: isActive ? '#0284c7' : '#475569',
+                    fontWeight: isActive ? 800 : 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.04em',
+                    transition: 'color 0.2s',
+                    position: 'relative',
+                    padding: '4px 0',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!isActive) e.currentTarget.style.color = '#0284c7';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isActive) e.currentTarget.style.color = '#475569';
+                  }}
+                >
+                  {link.label}
+                  {isActive && (
+                    <span
+                      style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        height: '2px',
+                        borderRadius: '2px',
+                        background: '#0284c7',
+                      }}
+                    />
+                  )}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Right Action Area: Ocean Blue Rivertech Login Button & Mobile Toggle */}
@@ -269,23 +216,15 @@ export default function Navbar({ onSkipExperience }: NavbarProps) {
             gap: '14px',
           }}
         >
-          {[
-            { href: '#experiencia', label: 'HOME' },
-            { href: '#one-platform', label: 'ABOUT US' },
-            { href: '#solutions', label: 'SOLUTIONS' },
-            { href: '#climate', label: 'IMPACT' },
-            { href: '#endorsement', label: 'CLIENTS' },
-            { href: '#news', label: 'BLOG' },
-            { href: '#contacto', label: 'CONTACT US' },
-          ].map((item) => (
+          {navLinks.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               style={{
                 fontSize: '0.9rem',
-                color: '#0f172a',
-                fontWeight: 600,
+                color: item.id === currentChapterId ? '#0284c7' : '#0f172a',
+                fontWeight: item.id === currentChapterId ? 800 : 600,
                 textTransform: 'uppercase',
                 letterSpacing: '0.04em',
                 padding: '8px 0',

@@ -15,7 +15,6 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Record submission state locally without inventing external production APIs
     setSubmitted(true);
   };
 
@@ -23,24 +22,35 @@ export default function ContactSection() {
     <section
       id="contacto"
       style={{
-        padding: '120px 24px',
-        backgroundColor: 'var(--color-bg)',
         position: 'relative',
+        zIndex: 2,
+        padding: '120px 24px 100px 24px',
+        color: '#0f172a',
       }}
-      aria-label="Contacto y solicitud de demostración"
+      aria-label="Contacto y solicitud de demostración técnica"
     >
-      <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1180px', margin: '0 auto' }}>
         
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
             gap: '48px',
             alignItems: 'center',
           }}
         >
           {/* Left Editorial column */}
-          <div>
+          <div
+            style={{
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.52) 100%)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)',
+              padding: 'clamp(36px, 5vw, 52px) clamp(28px, 4vw, 44px)',
+              borderRadius: '24px',
+              border: '1px solid rgba(255, 255, 255, 0.9)',
+              boxShadow: '0 20px 48px rgba(15, 23, 42, 0.08)',
+            }}
+          >
             <div
               style={{
                 display: 'inline-flex',
@@ -48,27 +58,28 @@ export default function ContactSection() {
                 gap: '8px',
                 padding: '6px 14px',
                 borderRadius: '9999px',
-                background: 'rgba(2, 132, 199, 0.08)',
+                background: 'rgba(2, 132, 199, 0.1)',
                 border: '1px solid rgba(2, 132, 199, 0.25)',
                 color: '#0284c7',
                 fontSize: '0.8rem',
-                fontWeight: 700,
+                fontWeight: 800,
                 textTransform: 'uppercase',
                 letterSpacing: '0.08em',
-                marginBottom: '16px',
+                marginBottom: '20px',
               }}
             >
-              Demostración RiverTech
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#0284c7' }} />
+              08 / DEMOSTRACIÓN RIVERTECH
             </div>
 
             <h2
               style={{
-                fontSize: 'clamp(2.1rem, 4vw, 3rem)',
-                lineHeight: 1.18,
-                fontWeight: 700,
-                color: '#0f172a',
+                fontSize: 'clamp(2.1rem, 3.8vw, 3rem)',
+                lineHeight: 1.15,
+                fontWeight: 800,
+                color: '#0b192c',
                 letterSpacing: '-0.025em',
-                marginBottom: '20px',
+                marginBottom: '18px',
               }}
             >
               Conoce el alcance de RiverTech para tu operación fluvial
@@ -76,10 +87,11 @@ export default function ContactSection() {
 
             <p
               style={{
-                fontSize: '1.1rem',
-                lineHeight: 1.6,
+                fontSize: '1.08rem',
+                lineHeight: 1.65,
                 color: '#475569',
                 marginBottom: '32px',
+                fontWeight: 500,
               }}
             >
               Coordinamos sesiones de demostración técnica orientadas a armadores, operadores de remolcadores y equipos de despacho logístico.
@@ -88,42 +100,43 @@ export default function ContactSection() {
             {/* Verification Note according to specification */}
             <div
               style={{
-                padding: '18px 22px',
-                borderRadius: '12px',
-                backgroundColor: 'rgba(2, 132, 199, 0.05)',
-                border: '1px solid rgba(2, 132, 199, 0.18)',
+                padding: '20px 24px',
+                borderRadius: '16px',
+                backgroundColor: 'rgba(2, 132, 199, 0.06)',
+                border: '1px solid rgba(2, 132, 199, 0.22)',
                 borderLeft: '4px solid #0284c7',
-                fontSize: '0.86rem',
-                color: '#475569',
-                lineHeight: 1.5,
+                fontSize: '0.88rem',
+                color: '#334155',
+                lineHeight: 1.55,
               }}
             >
-              <strong style={{ color: '#0f172a', display: 'block', marginBottom: '4px' }}>
+              <strong style={{ color: '#0f172a', display: 'block', marginBottom: '6px', fontWeight: 700 }}>
                 Canal de demostración técnica:
               </strong>
               {BRAND_CONFIG.contactStatusNote}
             </div>
           </div>
 
-          {/* Right Form Card */}
+          {/* Right Form Card: Completely stationary, comfortable, zero jitter */}
           <div
             style={{
-              padding: '40px',
-              borderRadius: '20px',
+              padding: 'clamp(32px, 5vw, 48px)',
+              borderRadius: '24px',
               backgroundColor: '#ffffff',
-              border: '1px solid #e2e8f0',
-              boxShadow: '0 20px 45px rgba(15, 23, 42, 0.08)',
+              border: '1px solid #cbd5e1',
+              boxShadow: '0 24px 60px rgba(15, 23, 42, 0.12)',
+              position: 'relative',
             }}
           >
             {submitted ? (
-              <div style={{ textAlign: 'center', padding: '32px 16px' }}>
+              <div style={{ textAlign: 'center', padding: '40px 16px' }}>
                 <div
                   style={{
-                    width: '56px',
-                    height: '56px',
+                    width: '64px',
+                    height: '64px',
                     borderRadius: '50%',
                     background: 'rgba(2, 132, 199, 0.12)',
-                    border: '1px solid #0284c7',
+                    border: '2px solid #0284c7',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -131,21 +144,21 @@ export default function ContactSection() {
                     color: '#0284c7',
                   }}
                 >
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '12px' }}>
+                <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: '#0f172a', marginBottom: '12px' }}>
                   Solicitud registrada
                 </h3>
-                <p style={{ color: '#475569', lineHeight: 1.6, fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: 1.6, fontSize: '0.98rem', maxWidth: '380px', margin: '0 auto' }}>
                   Gracias por tu interés en RiverTech. La configuración del canal de atención directa se encuentra en proceso de enlace con el equipo operacional.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div>
-                  <label htmlFor="nombre" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 600, color: '#0f172a', marginBottom: '6px' }}>
+                  <label htmlFor="nombre" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>
                     Nombre completo
                   </label>
                   <input
@@ -157,18 +170,19 @@ export default function ContactSection() {
                     placeholder="Ej. Juan Pérez"
                     style={{
                       width: '100%',
-                      padding: '12px 16px',
+                      padding: '13px 16px',
                       background: '#f8fafc',
                       border: '1px solid #cbd5e1',
-                      borderRadius: '8px',
+                      borderRadius: '10px',
                       color: '#0f172a',
                       fontSize: '0.95rem',
+                      outline: 'none',
                     }}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="empresa" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 600, color: '#0f172a', marginBottom: '6px' }}>
+                  <label htmlFor="empresa" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>
                     Empresa u organización fluvial
                   </label>
                   <input
@@ -180,19 +194,20 @@ export default function ContactSection() {
                     placeholder="Ej. Naviera Fluvial S.A."
                     style={{
                       width: '100%',
-                      padding: '12px 16px',
+                      padding: '13px 16px',
                       background: '#f8fafc',
                       border: '1px solid #cbd5e1',
-                      borderRadius: '8px',
+                      borderRadius: '10px',
                       color: '#0f172a',
                       fontSize: '0.95rem',
+                      outline: 'none',
                     }}
                   />
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   <div>
-                    <label htmlFor="cargo" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 600, color: '#0f172a', marginBottom: '6px' }}>
+                    <label htmlFor="cargo" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>
                       Cargo / Área
                     </label>
                     <input
@@ -203,18 +218,19 @@ export default function ContactSection() {
                       placeholder="Ej. Operaciones"
                       style={{
                         width: '100%',
-                        padding: '12px 16px',
+                        padding: '13px 16px',
                         background: '#f8fafc',
                         border: '1px solid #cbd5e1',
-                        borderRadius: '8px',
+                        borderRadius: '10px',
                         color: '#0f172a',
                         fontSize: '0.95rem',
+                        outline: 'none',
                       }}
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="embarcaciones" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 600, color: '#0f172a', marginBottom: '6px' }}>
+                    <label htmlFor="embarcaciones" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>
                       Nº Embarcaciones
                     </label>
                     <select
@@ -223,12 +239,13 @@ export default function ContactSection() {
                       onChange={(e) => setFormData({ ...formData, embarcaciones: e.target.value })}
                       style={{
                         width: '100%',
-                        padding: '12px 16px',
+                        padding: '13px 16px',
                         background: '#f8fafc',
                         border: '1px solid #cbd5e1',
-                        borderRadius: '8px',
+                        borderRadius: '10px',
                         color: '#0f172a',
                         fontSize: '0.95rem',
+                        outline: 'none',
                       }}
                     >
                       <option value="1-5">1 a 5 convoyes</option>
@@ -239,7 +256,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="mensaje" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 600, color: '#0f172a', marginBottom: '6px' }}>
+                  <label htmlFor="mensaje" style={{ display: 'block', fontSize: '0.88rem', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>
                     Consulta u objetivo operacional
                   </label>
                   <textarea
@@ -247,16 +264,17 @@ export default function ContactSection() {
                     rows={3}
                     value={formData.mensaje}
                     onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
-                    placeholder="Detalles sobre las rutas o flota..."
+                    placeholder="Detalles sobre las rutas, canales o flota..."
                     style={{
                       width: '100%',
-                      padding: '12px 16px',
+                      padding: '13px 16px',
                       background: '#f8fafc',
                       border: '1px solid #cbd5e1',
-                      borderRadius: '8px',
+                      borderRadius: '10px',
                       color: '#0f172a',
                       fontSize: '0.95rem',
                       resize: 'none',
+                      outline: 'none',
                     }}
                   />
                 </div>
@@ -264,7 +282,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   className="btn-primary"
-                  style={{ width: '100%', padding: '14px', marginTop: '8px' }}
+                  style={{ width: '100%', padding: '15px', marginTop: '6px' }}
                 >
                   <span>Enviar solicitud de demostración</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

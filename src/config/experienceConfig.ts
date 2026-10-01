@@ -238,3 +238,124 @@ export const BRAND_CONFIG = {
   ],
   contactStatusNote: 'Canal directo de demostración para operadores de flota y armadores.',
 };
+
+/**
+ * MAPA DE CAPÍTULOS DE LA EXPERIENCIA CONTINUA
+ * Define la narrativa espacial a lo largo de toda la landing page:
+ * Sección -> Recurso -> Tramo/Fotograma -> Transformación visual -> Intervalo de lectura -> Salida
+ */
+export interface MasterChapter {
+  id: string;
+  index: number;
+  badge: string;
+  title: string;
+  navLabel: string;
+  resource: string;
+  frameRange?: [number, number];
+  visualTransformation: string;
+  readingInterval: string;
+  exitTransition: string;
+  linkingElement: string;
+}
+
+export const LANDING_MASTER_MAP: MasterChapter[] = [
+  {
+    id: 'experiencia',
+    index: 1,
+    badge: '01 / Apertura Fluvial',
+    title: 'Tu operación fluvial, en una sola visión.',
+    navLabel: 'HOME',
+    resource: '/frames_3d (Fotogramas 0 a 52)',
+    frameRange: [0, 52],
+    visualTransformation: 'Perspectiva aérea continua 2.5D con apertura gradual hacia encuadre completo.',
+    readingInterval: 'Presentación del mensaje principal, valor comercial y botón de inmersión en la operación.',
+    exitTransition: 'La embarcación inicia avance río abajo, alineándose con el canal náutico hacia telemetría.',
+    linkingElement: 'Embarcación en navegación y eje del río.',
+  },
+  {
+    id: 'one-platform',
+    index: 2,
+    badge: '02 / Beneficios & Capacidades',
+    title: 'One platform, total control.',
+    navLabel: 'ABOUT US',
+    resource: '/frames_3d (Fotogramas 52 a 110) + Capa HUD de telemetría',
+    frameRange: [52, 110],
+    visualTransformation: 'Acercamiento progresivo a la ruta de navegación, con paneles de telemetría flotantes integrados.',
+    readingInterval: 'Lectura reposada de los 4 pilares: Eficiencia de combustible, Reducción de CO2, Telemetría y Mantenimiento preventivo.',
+    exitTransition: 'Focalización de la escena en el calado y perfil submarino del convoy fluvial.',
+    linkingElement: 'Canal navegable y sondajes de profundidad.',
+  },
+  {
+    id: 'solutions',
+    index: 3,
+    badge: '03 / Soluciones: Survey, Pilot, Dredge',
+    title: 'Technology built for river operations',
+    navLabel: 'SOLUTIONS',
+    resource: 'Secuencia 3D (110-180) vinculada a /images/solution_survey.jpg, solution_pilot.jpg, solution_dredge.jpg',
+    frameRange: [110, 180],
+    visualTransformation: 'Transformación secuencial de 3 planos operativos: batimetría acústica -> cabina de pilotaje -> operación de dragado.',
+    readingInterval: 'Intervalo estable por cada solución técnica con especificación de alcance y llamada a la acción.',
+    exitTransition: 'Apertura de la cámara desde el canal dragado hacia la inmensidad del paisaje de ribera.',
+    linkingElement: 'Eje del canal y datos de batimetría/derrota.',
+  },
+  {
+    id: 'climate',
+    index: 4,
+    badge: '04 / Impacto Ambiental',
+    title: 'Cleaner rivers start with smarter navigation',
+    navLabel: 'IMPACT',
+    resource: '/images/climate_riverbank.jpg',
+    visualTransformation: 'Disolución de paneles técnicos y expansión luminosa hacia el ecosistema natural y comunidades riberas.',
+    readingInterval: 'Compromiso ecológico y sostenibilidad en la cuenca fluvial sin cifras no verificadas.',
+    exitTransition: 'Elevación suave de cámara hacia vista cenital del meandro del río.',
+    linkingElement: 'Riberas y espejo de agua natural.',
+  },
+  {
+    id: 'endorsement',
+    index: 5,
+    badge: '05 / Clientes & Confianza',
+    title: 'Explore the endorsement of those who trust us',
+    navLabel: 'CLIENTS',
+    resource: '/images/river_trust_aerial.jpg',
+    visualTransformation: 'Panorama aéreo cenital de río meándrico al atardecer, atmósfera limpia y serena.',
+    readingInterval: 'Marcas de clientes e interlocutores navieros (3 Castillos, PRODECO, Impala, CNR, Naviera Central) con nitidez total.',
+    exitTransition: 'Continuidad de la perspectiva aérea fluvial hacia testimonios directos.',
+    linkingElement: 'Ruta meándrica fluvial en vista aérea.',
+  },
+  {
+    id: 'reviews',
+    index: 6,
+    badge: '06 / Testimonios Operacionales',
+    title: 'What our clients say',
+    navLabel: 'REVIEWS',
+    resource: 'Fondo aéreo fluvial con atenuación de lectura y velo de contraste',
+    visualTransformation: 'Atenuación suave de la escena compartida para garantizar legibilidad de citas.',
+    readingInterval: 'Lectura completamente estable de testimonios de directores de operaciones y superintendentes de flota.',
+    exitTransition: 'Transición hacia la infraestructura y logística de ribera.',
+    linkingElement: 'Atmósfera fluvial compartida.',
+  },
+  {
+    id: 'news',
+    index: 7,
+    badge: '07 / Noticias & Frente Operacional',
+    title: 'Insights from the river operations frontline',
+    navLabel: 'BLOG',
+    resource: '/images/news_bridge.jpg y /images/news_logistics.jpg',
+    visualTransformation: 'Paneles de perspectiva continua con enlaces a artículos de innovación y pesaje fluvial.',
+    readingInterval: 'Exploración de artículos con interacción inmediata sin saltos.',
+    exitTransition: 'Acomodamiento final de la embarcación en zona de fondeo y calma náutica.',
+    linkingElement: 'Infraestructura fluvial y logística de convoyes.',
+  },
+  {
+    id: 'contacto',
+    index: 8,
+    badge: '08 / Demostración & Cierre',
+    title: 'Conoce el alcance de RiverTech para tu operación fluvial',
+    navLabel: 'CONTACT US',
+    resource: 'Vista fluvial sosegada al crepúsculo con continuidad al footer',
+    visualTransformation: 'Escena plenamente asentada; formulario estático, accesible y sin balanceos.',
+    readingInterval: 'Completado cómodo del formulario de demostración y consulta de enlaces institucionales.',
+    exitTransition: 'Fusión orgánica con el footer corporativo sin cortes abruptos.',
+    linkingElement: 'Operación fluvial consolidada.',
+  },
+];

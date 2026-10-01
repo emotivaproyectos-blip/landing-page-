@@ -10,6 +10,7 @@ export default function LatestNewsSection() {
       image: '/images/news_bridge.jpg',
       title: 'Technological Transformation in Logistics: Driving the Future of Terrestrial, Maritime, and River Transport',
       category: 'Maritime & River Innovation',
+      href: '#contacto',
     },
     {
       date: '15',
@@ -17,6 +18,7 @@ export default function LatestNewsSection() {
       image: '/images/news_logistics.jpg',
       title: 'Innovative Technology in Load Weighing: Transforming Efficiency and Accuracy',
       category: 'Fleet & Cargo Telemetry',
+      href: '#contacto',
     },
   ];
 
@@ -24,40 +26,70 @@ export default function LatestNewsSection() {
     <section
       id="news"
       style={{
-        backgroundColor: '#f1f5f9',
-        padding: '90px 24px',
+        position: 'relative',
+        zIndex: 2,
+        padding: '120px 24px 100px 24px',
         color: '#0f172a',
       }}
+      aria-label="Noticias y artículos de innovación fluvial"
     >
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
         
-        <span
+        {/* Header */}
+        <div
           style={{
-            fontSize: '0.82rem',
-            color: '#0284c7',
-            fontWeight: 800,
-            textTransform: 'uppercase',
-            letterSpacing: '0.12em',
-            display: 'block',
-            marginBottom: '10px',
+            maxWidth: '820px',
+            margin: '0 auto 60px auto',
+            textAlign: 'center',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.45) 100%)',
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
+            padding: '36px 32px',
+            borderRadius: '24px',
+            border: '1px solid rgba(255, 255, 255, 0.85)',
+            boxShadow: '0 16px 40px rgba(15, 23, 42, 0.08)',
           }}
         >
-          LATEST NEWS
-        </span>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '6px 14px',
+              borderRadius: '9999px',
+              background: 'rgba(2, 132, 199, 0.1)',
+              border: '1px solid rgba(2, 132, 199, 0.25)',
+              color: '#0284c7',
+              fontSize: '0.8rem',
+              fontWeight: 800,
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              marginBottom: '16px',
+            }}
+          >
+            <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#0284c7' }} />
+            07 / LATEST NEWS
+          </div>
 
-        <h2
-          style={{
-            fontSize: 'clamp(2rem, 3.8vw, 2.9rem)',
-            fontWeight: 800,
-            color: '#0f172a',
-            letterSpacing: '-0.02em',
-            marginBottom: '48px',
-          }}
-        >
-          Insights from the river operations frontline
-        </h2>
+          <h2
+            style={{
+              fontSize: 'clamp(2.1rem, 3.8vw, 3rem)',
+              fontWeight: 800,
+              color: '#0b192c',
+              letterSpacing: '-0.025em',
+              lineHeight: 1.18,
+              marginBottom: '14px',
+            }}
+          >
+            Insights from the river operations frontline
+          </h2>
 
-        {/* 2 News Cards */}
+          <p style={{ fontSize: '1.05rem', color: '#475569', lineHeight: 1.6, fontWeight: 500 }}>
+            Análisis, innovaciones en telemetría de carga y transformación logística en el transporte fluvial y marítimo.
+          </p>
+        </div>
+
+        {/* 2 News Articles Cards */}
         <div
           style={{
             display: 'grid',
@@ -69,24 +101,28 @@ export default function LatestNewsSection() {
             <article
               key={idx}
               style={{
-                borderRadius: '16px',
+                borderRadius: '24px',
                 overflow: 'hidden',
-                backgroundColor: '#ffffff',
-                boxShadow: '0 10px 30px -4px rgba(0, 0, 0, 0.08)',
+                background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.65) 100%)',
+                backdropFilter: 'blur(20px)',
+                WebkitBackdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.9)',
+                boxShadow: '0 16px 36px -4px rgba(15, 23, 42, 0.08)',
                 display: 'flex',
                 flexDirection: 'column',
-                transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 16px 36px -6px rgba(0, 0, 0, 0.14)';
+                e.currentTarget.style.boxShadow = '0 24px 48px -6px rgba(2, 132, 199, 0.18)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 10px 30px -4px rgba(0, 0, 0, 0.08)';
+                e.currentTarget.style.boxShadow = '0 16px 36px -4px rgba(15, 23, 42, 0.08)';
               }}
             >
-              <div style={{ position: 'relative', width: '100%', height: '240px', overflow: 'hidden' }}>
+              {/* Media banner */}
+              <div style={{ position: 'relative', width: '100%', height: '260px', overflow: 'hidden', backgroundColor: '#070d18' }}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -103,34 +139,36 @@ export default function LatestNewsSection() {
                 <div
                   style={{
                     position: 'absolute',
-                    top: '16px',
-                    left: '16px',
-                    backgroundColor: '#ffffff',
-                    borderRadius: '8px',
-                    padding: '8px 12px',
+                    top: '20px',
+                    left: '20px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.92)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '12px',
+                    padding: '8px 14px',
                     textAlign: 'center',
-                    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                    border: '1px solid #e2e8f0',
+                    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)',
+                    border: '1px solid rgba(255, 255, 255, 0.8)',
                   }}
                 >
-                  <span style={{ display: 'block', fontSize: '1.25rem', fontWeight: 800, color: '#0284c7', lineHeight: 1 }}>
+                  <span style={{ display: 'block', fontSize: '1.35rem', fontWeight: 800, color: '#0284c7', lineHeight: 1 }}>
                     {item.date}
                   </span>
-                  <span style={{ display: 'block', fontSize: '0.72rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>
+                  <span style={{ display: 'block', fontSize: '0.72rem', fontWeight: 700, color: '#475569', textTransform: 'uppercase' }}>
                     {item.month}
                   </span>
                 </div>
               </div>
 
-              <div style={{ padding: '28px 24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+              {/* Article Content */}
+              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                 <span
                   style={{
-                    fontSize: '0.75rem',
+                    fontSize: '0.78rem',
                     color: '#0284c7',
-                    fontWeight: 700,
+                    fontWeight: 800,
                     textTransform: 'uppercase',
-                    letterSpacing: '0.06em',
-                    marginBottom: '8px',
+                    letterSpacing: '0.08em',
+                    marginBottom: '10px',
                   }}
                 >
                   {item.category}
@@ -138,29 +176,36 @@ export default function LatestNewsSection() {
 
                 <h3
                   style={{
-                    fontSize: '1.25rem',
-                    fontWeight: 700,
+                    fontSize: '1.28rem',
+                    fontWeight: 800,
                     color: '#0f172a',
-                    lineHeight: 1.4,
-                    marginBottom: '16px',
+                    lineHeight: 1.35,
+                    marginBottom: '20px',
                   }}
                 >
                   {item.title}
                 </h3>
 
-                <span
+                <a
+                  href={item.href}
                   style={{
                     marginTop: 'auto',
-                    fontSize: '0.85rem',
+                    fontSize: '0.9rem',
                     color: '#0284c7',
                     fontWeight: 700,
-                    display: 'flex',
+                    display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
+                    textDecoration: 'none',
+                    transition: 'gap 0.2s ease',
                   }}
                 >
-                  Read article →
-                </span>
+                  <span>Read article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </a>
               </div>
             </article>
           ))}
